@@ -52,10 +52,9 @@ number5.addEventListener("click", () => {
   number5.classList.add("active");
 });
 
-if (numberSelected.textContent === "") {
-  console.log("hi");
-  btnSubmit.addEventListener("click", (e) => {
+btnSubmit.addEventListener("click", () => {
+  if (numberSelected.textContent !== "") {
     frontContent.classList.add("hidden");
     backContent.classList.remove("hidden");
-  });
-}
+  }
+});
